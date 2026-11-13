@@ -44,12 +44,11 @@ With the dark themes, the neon draws a glow around keywords, types, functions, t
 VS Code has no API for this kind of styling, so the neon works like the "Neon Dreams" of SynthWave '84: it adds a script to the VS Code installation files.
 
 1. Run **Miami '26: Enable Neon** from the command palette, then reload VS Code.
-2. VS Code then says that its installation is corrupt and shows `[Unsupported]` in the title bar, because its files changed. To remove these warnings, install [Fix VSCode Checksums Next](https://marketplace.visualstudio.com/items?itemName=RimuruChan.vscode-fix-checksums-next), run **Fix Checksums: Apply**, then close and restart VS Code completely. You can also just choose *Don't Show Again* on the warning.
+2. Remove the "corrupt installation" warning, see below.
 
 Good to know:
 
-* **After each VS Code update**, run *Miami '26: Enable Neon* again, then *Fix Checksums: Apply*: the update replaces the modified files.
-* After *Miami '26: Disable Neon*, run *Fix Checksums: Apply* again too, since the files changed back.
+* **After each VS Code update**, run *Miami '26: Enable Neon* again: the update replaces the modified files.
 * If VS Code is installed for all users (in *Program Files*), run it as administrator once to enable or disable the neon.
 * The neon follows the theme: switch to another theme and it disappears, switch back and it returns.
 * **Miami '26: Disable Neon** removes the script and restores the files.
@@ -58,6 +57,18 @@ Settings, applied the next time you run *Miami '26: Enable Neon*:
 
 * `miami26.brightness`: brightness of the glow, from 0 to 1 (default 0.6).
 * `miami26.disableGlow`: keep the tab and activity bar gradients without the glow around the text.
+
+### Removing the "corrupt installation" warning
+
+Since the neon modifies its files, VS Code then says that its installation is corrupt and shows `[Unsupported]` in the title bar. Nothing is broken: VS Code only notices that its files changed. To remove these warnings:
+
+1. Install [Fix VSCode Checksums Next](https://marketplace.visualstudio.com/items?itemName=RimuruChan.vscode-fix-checksums-next).
+2. Run **Fix Checksums: Apply** from the command palette.
+3. Close and restart VS Code completely (a window reload is not enough).
+
+Run *Fix Checksums: Apply* again each time the files change: after *Miami '26: Enable Neon* (including after a VS Code update) and after *Miami '26: Disable Neon*.
+
+If you prefer not to install it, choose *Don't Show Again* on the warning.
 
 ## Recommended font
 
