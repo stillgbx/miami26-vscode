@@ -104,5 +104,9 @@ Press F5 to try the themes in an Extension Development Host, and open `Examples/
 ### Releasing
 
 1. Increase `version` in `package.json` and add the changes to `CHANGELOG.md`.
-2. Push a tag with the same version, for example `v1.1.0`. The [Build](.github/workflows/build.yml) workflow packages the extension and attaches the VSIX to a new GitHub release.
-3. Publish the VSIX on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/manage) (*New extension > Visual Studio Code*, or *Update* on an existing one).
+2. Push a tag with the same version, for example `v1.1.0`. The [Build](.github/workflows/build.yml) workflow packages the extension, attaches the VSIX to a new GitHub release, then publishes it on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=stillgbx.miami26-vscode) and on [Open VSX](https://open-vsx.org/extension/stillgbx/miami26-vscode), the registry of Cursor, VSCodium and Windsurf.
+
+The publications need, once:
+
+* **Visual Studio Marketplace**: a *Trusted Publishing* policy on the `stillgbx` publisher ([manage page](https://marketplace.visualstudio.com/manage) > *Trusted Publishing* > *Create*), for the repository `stillgbx/miami26-vscode` and the workflow `build.yml`. No token or secret is needed.
+* **Open VSX**: the `OVSX_PAT` repository secret (*Settings > Secrets and variables > Actions*), an Open VSX access token restricted to the `stillgbx` namespace. Without it, the workflow skips Open VSX with a warning.

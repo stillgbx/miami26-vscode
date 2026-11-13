@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: write
+  id-token: write # Visual Studio Marketplace Trusted Publishing
 
 jobs:
   build:
@@ -27,6 +28,7 @@ jobs:
           git diff --exit-code -- themes src/neon/themes.json
 
       - name: Package VSIX
+        id: package
         run: npx --yes @vscode/vsce package --out miami26-vscode.vsix
 
       - uses: actions/upload-artifact@v7
@@ -41,3 +43,23 @@ jobs:
         with:
           files: miami26-vscode.vsix
           generate_release_notes: true
+
+      # Then publishes the same VSIX on the Visual Studio Marketplace with Trusted Publishing: no secret,
+      # the Marketplace trusts this workflow through the policy of the stillgbx publisher
+      # (repository stillgbx/miami26-vscode, workflow build.yml).
+      - name: Publish to the Visual Studio Marketplace
+        if: ${{ !cancelled() && steps.package.outcome == 'success' && startsWith(github.ref, 'refs/tags/v') }}
+        run: npx --yes @vscode/vsce publish --oidc --packagePath miami26-vscode.vsix
+
+      # And on Open VSX (Cursor, VSCodium, Windsurf...), with the OVSX_PAT repository secret: an Open VSX
+      # access token for the stillgbx namespace. Both publications are tried even if the other one fails.
+      - name: Publish to Open VSX
+        if: ${{ !cancelled() && steps.package.outcome == 'success' && startsWith(github.ref, 'refs/tags/v') }}
+        env:
+          OVSX_PAT: ${{ secrets.OVSX_PAT }}
+        run: |
+          if [ -z "$OVSX_PAT" ]; then
+            echo "::warning::The OVSX_PAT secret is not set: the extension was not published on Open VSX."
+            exit 0
+          fi
+          npx --yes ovsx publish miami26-vscode.vsix
