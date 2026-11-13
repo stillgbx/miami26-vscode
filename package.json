@@ -1,0 +1,100 @@
+{
+  "name": "miami26-vscode",
+  "displayName": "Miami '26",
+  "description": "Miami color themes: Bay and Sunset palettes, each in dark and light, with an optional neon glow.",
+  "version": "1.0.0",
+  "publisher": "stillgbx",
+  "author": "stillgbx",
+  "license": "MIT",
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#15112A",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stillgbx/miami26-vscode"
+  },
+  "bugs": {
+    "url": "https://github.com/stillgbx/miami26-vscode/issues"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "extensionKind": [
+    "ui"
+  ],
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "color theme",
+    "dark",
+    "light",
+    "miami",
+    "neon",
+    "sunset",
+    "pastel",
+    "tropical",
+    "ocean"
+  ],
+  "main": "./src/extension.js",
+  "scripts": {
+    "generate": "node tools/generate-themes.js",
+    "package": "npx --yes @vscode/vsce package"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Miami '26 Bay",
+        "uiTheme": "vs-dark",
+        "path": "./themes/miami26-bay-color-theme.json"
+      },
+      {
+        "label": "Miami '26 Bay Light",
+        "uiTheme": "vs",
+        "path": "./themes/miami26-bay-light-color-theme.json"
+      },
+      {
+        "label": "Miami '26 Sunset",
+        "uiTheme": "vs-dark",
+        "path": "./themes/miami26-sunset-color-theme.json"
+      },
+      {
+        "label": "Miami '26 Sunset Light",
+        "uiTheme": "vs",
+        "path": "./themes/miami26-sunset-light-color-theme.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "miami26.enableNeon",
+        "title": "Enable Neon",
+        "category": "Miami '26"
+      },
+      {
+        "command": "miami26.disableNeon",
+        "title": "Disable Neon",
+        "category": "Miami '26"
+      }
+    ],
+    "configuration": {
+      "title": "Miami '26",
+      "properties": {
+        "miami26.brightness": {
+          "type": "number",
+          "default": 0.6,
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Brightness of the neon glow, from 0 (transparent) to 1. Run \"Miami '26: Enable Neon\" again to apply a change."
+        },
+        "miami26.disableGlow": {
+          "type": "boolean",
+          "default": false,
+          "description": "Keep the neon editor chrome (tab and activity bar gradients) without the glow around the text. Run \"Miami '26: Enable Neon\" again to apply a change."
+        }
+      }
+    }
+  }
+}

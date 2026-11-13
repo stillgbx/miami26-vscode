@@ -1,0 +1,43 @@
+name: Build
+
+on:
+  push:
+    branches: [master]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      # The committed themes must match the generator.
+      - name: Check generated themes
+        run: |
+          node tools/generate-themes.js
+          git diff --exit-code -- themes src/neon/themes.json
+
+      - name: Package VSIX
+        run: npx --yes @vscode/vsce package --out miami26-vscode.vsix
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: miami26-vscode
+          path: miami26-vscode.vsix
+
+      # Pushing a tag such as v1.1.0 publishes a GitHub release with the VSIX attached.
+      - name: Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v3
+        with:
+          files: miami26-vscode.vsix
+          generate_release_notes: true

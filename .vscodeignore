@@ -1,0 +1,8 @@
+.github/**
+.vscode/**
+tools/**
+Preview/**
+node_modules/**
+*.vsix
+.gitignore
+Examples/**
