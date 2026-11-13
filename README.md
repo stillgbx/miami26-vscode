@@ -5,8 +5,8 @@
 
 Miami colors for VS Code. Two palettes, each in a dark and a light version:
 
-* **Bay**: a day on the bay. Turquoise water, sky blue, lavender towers, pink facades and warm sand.
-* **Sunset**: dusk on the ocean front. Magenta, sunset orange, gold and periwinkle buildings under a violet sky.
+* **Bay**: a day on the bay. Sky blue, turquoise water, lavender palm trees, peach facades and warm sand.
+* **Sunset**: dusk on the ocean front. Magenta, peach and pale gold under a periwinkle and lavender sky, with plum palm trees.
 
 | | Dark | Light |
 | --- | --- | --- |

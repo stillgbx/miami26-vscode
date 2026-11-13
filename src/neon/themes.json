@@ -3,36 +3,36 @@
     "label": "Miami '26 Bay",
     "className": "stillgbx-miami26-vscode-themes-miami26-bay-color-theme-json",
     "glow": {
-      "2ed3c6": "0 0 2px #041210, 0 0 4px #00e5d4[NEON_BRIGHTNESS], 0 0 10px #00e5d4[NEON_BRIGHTNESS]",
-      "b9a6ff": "0 0 2px #0e0a1f, 0 0 4px #8c6cff[NEON_BRIGHTNESS], 0 0 10px #8c6cff[NEON_BRIGHTNESS]",
-      "7cc4ff": "0 0 2px #04101f, 0 0 3px #2e9bff[NEON_BRIGHTNESS], 0 0 8px #2e9bff[NEON_BRIGHTNESS]",
-      "7edc9e": "0 0 2px #0c100c, 0 0 8px #2fb86a[NEON_BRIGHTNESS], 0 0 24px #1e3a2a[NEON_BRIGHTNESS]",
-      "dcebf5": "0 0 2px #0c1b26, 0 0 5px #7cc4ff33, 0 0 10px #ffffff22"
+      "7fd8c8": "0 0 2px #041210, 0 0 4px #2ee0c8[NEON_BRIGHTNESS], 0 0 10px #2ee0c8[NEON_BRIGHTNESS]",
+      "a9a6f0": "0 0 2px #0e0a1f, 0 0 4px #7c74ff[NEON_BRIGHTNESS], 0 0 10px #7c74ff[NEON_BRIGHTNESS]",
+      "8ec6ec": "0 0 2px #04101f, 0 0 3px #3aa6f0[NEON_BRIGHTNESS], 0 0 8px #3aa6f0[NEON_BRIGHTNESS]",
+      "f5b49c": "0 0 2px #1a0e08, 0 0 6px #ff8a5c[NEON_BRIGHTNESS], 0 0 18px #3a2420[NEON_BRIGHTNESS]",
+      "e2eef2": "0 0 2px #102230, 0 0 5px #8ec6ec33, 0 0 10px #ffffff22"
     },
-    "chrome": ".monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active{box-shadow:inset 0 -5px 25px #2ed3c622}.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(to right,#2ed3c6,#b9a6ff);z-index:6;pointer-events:none}.monaco-workbench .activitybar>.content .monaco-action-bar .action-item.checked .active-item-indicator:before{border-image:linear-gradient(to bottom,#2ed3c6,#b9a6ff) 1 !important}.monaco-workbench .activitybar>.content .monaco-action-bar .badge .badge-content{background:linear-gradient(to bottom,#2ed3c6,#b9a6ff) !important}"
+    "chrome": ".monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active{box-shadow:inset 0 -5px 25px #7fd8c822}.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(to right,#7fd8c8,#a9a6f0);z-index:6;pointer-events:none}.monaco-workbench .activitybar>.content .monaco-action-bar .action-item.checked .active-item-indicator:before{border-image:linear-gradient(to bottom,#7fd8c8,#a9a6f0) 1 !important}.monaco-workbench .activitybar>.content .monaco-action-bar .badge .badge-content{background:linear-gradient(to bottom,#7fd8c8,#a9a6f0) !important}"
   },
   {
     "label": "Miami '26 Bay Light",
     "className": "stillgbx-miami26-vscode-themes-miami26-bay-light-color-theme-json",
     "glow": {},
-    "chrome": ".monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active{box-shadow:inset 0 -5px 25px #0b7f7522}.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(to right,#0b7f75,#5e45c4);z-index:6;pointer-events:none}.monaco-workbench .activitybar>.content .monaco-action-bar .action-item.checked .active-item-indicator:before{border-image:linear-gradient(to bottom,#0b7f75,#5e45c4) 1 !important}.monaco-workbench .activitybar>.content .monaco-action-bar .badge .badge-content{background:linear-gradient(to bottom,#0b7f75,#5e45c4) !important}"
+    "chrome": ".monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active{box-shadow:inset 0 -5px 25px #12807922}.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(to right,#128079,#6b67c2);z-index:6;pointer-events:none}.monaco-workbench .activitybar>.content .monaco-action-bar .action-item.checked .active-item-indicator:before{border-image:linear-gradient(to bottom,#128079,#6b67c2) 1 !important}.monaco-workbench .activitybar>.content .monaco-action-bar .badge .badge-content{background:linear-gradient(to bottom,#128079,#6b67c2) !important}"
   },
   {
     "label": "Miami '26 Sunset",
     "className": "stillgbx-miami26-vscode-themes-miami26-sunset-color-theme-json",
     "glow": {
-      "ff4fa3": "0 0 2px #2a0a1a, 0 0 4px #ff2e93[NEON_BRIGHTNESS], 0 0 10px #ff2e93[NEON_BRIGHTNESS]",
+      "ff5faa": "0 0 2px #2a0a1a, 0 0 4px #ff2e93[NEON_BRIGHTNESS], 0 0 10px #ff2e93[NEON_BRIGHTNESS]",
       "a9b4f5": "0 0 2px #0a0c24, 0 0 4px #6f7bff[NEON_BRIGHTNESS], 0 0 10px #6f7bff[NEON_BRIGHTNESS]",
-      "ffa45c": "0 0 2px #1a0e00, 0 0 3px #ff7a1f[NEON_BRIGHTNESS], 0 0 8px #ff7a1f[NEON_BRIGHTNESS]",
-      "d39bff": "0 0 2px #120a1c, 0 0 8px #a44cff[NEON_BRIGHTNESS], 0 0 24px #2a1a3a[NEON_BRIGHTNESS]",
-      "f3ddf0": "0 0 2px #15112a, 0 0 5px #ff4fa333, 0 0 10px #ffffff22"
+      "ffb27a": "0 0 2px #1a0e00, 0 0 3px #ff7a1f[NEON_BRIGHTNESS], 0 0 8px #ff7a1f[NEON_BRIGHTNESS]",
+      "d6a2f2": "0 0 2px #120a1c, 0 0 8px #a44cff[NEON_BRIGHTNESS], 0 0 24px #2a1a3a[NEON_BRIGHTNESS]",
+      "f6e2ee": "0 0 2px #231833, 0 0 5px #ff5faa33, 0 0 10px #ffffff22"
     },
-    "chrome": ".monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active{box-shadow:inset 0 -5px 25px #ff4fa322}.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(to right,#ff4fa3,#ffa45c);z-index:6;pointer-events:none}.monaco-workbench .activitybar>.content .monaco-action-bar .action-item.checked .active-item-indicator:before{border-image:linear-gradient(to bottom,#ff4fa3,#ffa45c) 1 !important}.monaco-workbench .activitybar>.content .monaco-action-bar .badge .badge-content{background:linear-gradient(to bottom,#ff4fa3,#ffa45c) !important}"
+    "chrome": ".monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active{box-shadow:inset 0 -5px 25px #ff5faa22}.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(to right,#ff5faa,#ffb27a);z-index:6;pointer-events:none}.monaco-workbench .activitybar>.content .monaco-action-bar .action-item.checked .active-item-indicator:before{border-image:linear-gradient(to bottom,#ff5faa,#ffb27a) 1 !important}.monaco-workbench .activitybar>.content .monaco-action-bar .badge .badge-content{background:linear-gradient(to bottom,#ff5faa,#ffb27a) !important}"
   },
   {
     "label": "Miami '26 Sunset Light",
     "className": "stillgbx-miami26-vscode-themes-miami26-sunset-light-color-theme-json",
     "glow": {},
-    "chrome": ".monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active{box-shadow:inset 0 -5px 25px #c2186a22}.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(to right,#c2186a,#b5561a);z-index:6;pointer-events:none}.monaco-workbench .activitybar>.content .monaco-action-bar .action-item.checked .active-item-indicator:before{border-image:linear-gradient(to bottom,#c2186a,#b5561a) 1 !important}.monaco-workbench .activitybar>.content .monaco-action-bar .badge .badge-content{background:linear-gradient(to bottom,#c2186a,#b5561a) !important}"
+    "chrome": ".monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active{box-shadow:inset 0 -5px 25px #c8287a22}.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(to right,#c8287a,#a64f18);z-index:6;pointer-events:none}.monaco-workbench .activitybar>.content .monaco-action-bar .action-item.checked .active-item-indicator:before{border-image:linear-gradient(to bottom,#c8287a,#a64f18) 1 !important}.monaco-workbench .activitybar>.content .monaco-action-bar .badge .badge-content{background:linear-gradient(to bottom,#c8287a,#a64f18) !important}"
   }
 ]

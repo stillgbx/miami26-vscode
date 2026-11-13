@@ -4,8 +4,8 @@
 //
 // Two palettes, each in a dark and a light version, the same as the Visual Studio themes
 // (github.com/stillgbx/miami26-vs):
-// * Bay: a day on the bay. Turquoise water, sky blue, lavender towers, pink facades, warm sand.
-// * Sunset: dusk on the ocean front. Magenta, sunset orange, gold, periwinkle buildings, violet sky.
+// * Bay: a day on the bay. Sky blue, turquoise water, lavender palm trees, peach facades, warm sand.
+// * Sunset: dusk on the ocean front. Magenta, peach, pale gold, periwinkle and lavender sky, plum palm trees.
 //
 // Each palette gives 'ui' colors (workbench), 'tokens' (syntax) and, for the dark ones, 'glow':
 // the neon text-shadow drawn around a token color when the neon is enabled. Outputs:
@@ -29,26 +29,28 @@ const BAY = {
   id: 'miami26-bay',
   label: "Miami '26 Bay",
   type: 'dark',
+  // The bay at nightfall: a lilac blue sky, deep water, lavender palm trees on the status bar,
+  // peach facades in the selection and pastel tokens.
   ui: {
-    frame: '07131D', sidebar: '10222F', editor: '0C1B26', raised: '163040', border: '1C3A4D',
-    text: 'E8F4F6', muted: '8FB0C2', faint: '4E7186',
-    accent: '2ED3C6', accentStrong: '17A398', onAccent: 'FFFFFF',
-    status: '13897F', statusText: 'FFFFFF',
-    selection: '1E4A5C', inactiveSelection: '17323F', highlight: '2E3A66', currentLine: '163040',
-    warm: 'FF9E7A', secondary: 'B9A6FF', error: 'FF6B8B', warning: 'FFC98F', success: '7EDC9E',
-    gradient: ['2ED3C6', 'B9A6FF'],
+    frame: '0B1626', sidebar: '1C2747', editor: '102230', raised: '1F3448', border: '27405A',
+    text: 'EAF4F2', muted: '93AFC2', faint: '5F7C9A',
+    accent: '5FD6C6', accentStrong: '2FA394', onAccent: 'FFFFFF',
+    status: '6763C2', statusText: 'FFFFFF',
+    selection: '5A4048', inactiveSelection: '33333F', highlight: '33335E', currentLine: '17303C',
+    warm: 'F5B095', secondary: 'A9A6F0', error: 'FF6B8B', warning: 'F5C98F', success: '7EDC9E',
+    gradient: ['7FD8C8', 'A9A6F0'],
   },
   tokens: {
-    keyword: '2ED3C6', type: 'B9A6FF', function: '7CC4FF', tag: '7EDC9E', variable: 'DCEBF5',
-    operator: '8FE9E1', attribute: '8CCBFF', string: 'FFC98F', constant: 'FF9CC2',
-    comment: '557489', escape: 'FF8FB8',
+    keyword: '7FD8C8', type: 'A9A6F0', function: '8EC6EC', tag: 'F5B49C', variable: 'E2EEF2',
+    operator: '9FE3D6', attribute: '9CCBEA', string: 'F3DDB0', constant: 'F2A0B4',
+    comment: '64799C', escape: 'F0A0C8',
   },
   glow: {
-    keyword: [dark(2, '041210'), neon(4, '00E5D4'), neon(10, '00E5D4')],
-    type: [dark(2, '0E0A1F'), neon(4, '8C6CFF'), neon(10, '8C6CFF')],
-    function: [dark(2, '04101F'), neon(3, '2E9BFF'), neon(8, '2E9BFF')],
-    tag: [dark(2, '0C100C'), neon(8, '2FB86A'), neon(24, '1E3A2A')],
-    variable: [dark(2, '0C1B26'), fixed(5, '33', '7CC4FF'), fixed(10, '22', 'FFFFFF')],
+    keyword: [dark(2, '041210'), neon(4, '2EE0C8'), neon(10, '2EE0C8')],
+    type: [dark(2, '0E0A1F'), neon(4, '7C74FF'), neon(10, '7C74FF')],
+    function: [dark(2, '04101F'), neon(3, '3AA6F0'), neon(8, '3AA6F0')],
+    tag: [dark(2, '1A0E08'), neon(6, 'FF8A5C'), neon(18, '3A2420')],
+    variable: [dark(2, '102230'), fixed(5, '33', '8EC6EC'), fixed(10, '22', 'FFFFFF')],
   },
 };
 
@@ -56,19 +58,21 @@ const BAY_LIGHT = {
   id: 'miami26-bay-light',
   label: "Miami '26 Bay Light",
   type: 'light',
+  // The bay in daylight: a sky blue frame, mint water panels and a sand editor; lavender palm trees
+  // on the status bar and peach facades in the selection.
   ui: {
-    frame: 'BBDBE9', sidebar: 'D8ECF0', editor: 'E3F2F2', raised: 'EBF6F6', border: 'A2CADB',
-    text: '17323F', muted: '45697A', faint: '6E95A3',
-    accent: '0B7F75', accentStrong: '0B7F75', onAccent: 'FFFFFF',
-    status: '0B7F75', statusText: 'FFFFFF',
-    selection: 'B2E0DA', inactiveSelection: 'CFE7E8', highlight: 'D6CDF0', currentLine: 'C9E4E6',
-    warm: 'F08A5D', secondary: '5E45C4', error: 'C62D58', warning: 'A3561A', success: '2A7F47',
-    gradient: ['0B7F75', '5E45C4'],
+    frame: 'A6CBE8', sidebar: 'D3EEE8', editor: 'FBF3E6', raised: 'FEF9F0', border: '93B8DC',
+    text: '1B3245', muted: '45627E', faint: '7A93AE',
+    accent: '128079', accentStrong: '128079', onAccent: 'FFFFFF',
+    status: '6B67C2', statusText: 'FFFFFF',
+    selection: 'F7CDBB', inactiveSelection: 'F2DFD2', highlight: 'DCD9F6', currentLine: 'F2E6D3',
+    warm: 'F4AE92', secondary: '5853B5', error: 'C62D58', warning: 'A3561A', success: '2A7F47',
+    gradient: ['128079', '6B67C2'],
   },
   tokens: {
-    keyword: '0A7A70', type: '5E45C4', function: '1C65AD', tag: '2A7F47', variable: '22394D',
-    operator: '2F7F79', attribute: '1C65AD', string: 'A3561A', constant: 'BF2F68',
-    comment: '5F7F8C', escape: 'BF2F68',
+    keyword: '0E7A74', type: '5853B5', function: '23689E', tag: '9C3F8A', variable: '1F3A50',
+    operator: '2A7579', attribute: '23689E', string: 'B04F2A', constant: 'C2386C',
+    comment: '7380AA', escape: 'C2386C',
   },
 };
 
@@ -76,26 +80,27 @@ const SUNSET = {
   id: 'miami26-sunset',
   label: "Miami '26 Sunset",
   type: 'dark',
+  // Dusk on the ocean front: plum palm trees, a peach horizon on the status bar and a magenta accent.
   ui: {
-    frame: '0D0A1C', sidebar: '1B1634', editor: '15112A', raised: '241D42', border: '2E2652',
-    text: 'F6EEF6', muted: 'A99FC8', faint: '62598F',
-    accent: 'FF4FA3', accentStrong: 'D93A86', onAccent: 'FFFFFF',
-    status: 'D6337F', statusText: 'FFFFFF',
-    selection: '4A2A6A', inactiveSelection: '2E2850', highlight: '3A3270', currentLine: '241D42',
-    warm: 'FF7A5C', secondary: 'A9B4F5', error: 'FF5C6C', warning: 'FFD27F', success: '7EE0A8',
-    gradient: ['FF4FA3', 'FFA45C'],
+    frame: '160E24', sidebar: '2A1A3E', editor: '231833', raised: '33244C', border: '3A2A58',
+    text: 'F8EEF4', muted: 'B3A3C8', faint: '7E6A9C',
+    accent: 'FF5FAA', accentStrong: 'D9408A', onAccent: 'FFFFFF',
+    status: 'F5A872', statusText: '1E1430',
+    selection: '5A2F62', inactiveSelection: '3A2A4E', highlight: '3E3470', currentLine: '2E2042',
+    warm: 'FF7A8A', secondary: 'A9B4F5', error: 'FF5C6C', warning: 'FFD27F', success: '7EE0A8',
+    gradient: ['FF5FAA', 'FFB27A'],
   },
   tokens: {
-    keyword: 'FF4FA3', type: 'A9B4F5', function: 'FFA45C', tag: 'D39BFF', variable: 'F3DDF0',
-    operator: 'FF8FC4', attribute: 'FFB070', string: 'FFD27F', constant: 'FF7A6B',
-    comment: '7C6FA3', escape: '8E9BFF',
+    keyword: 'FF5FAA', type: 'A9B4F5', function: 'FFB27A', tag: 'D6A2F2', variable: 'F6E2EE',
+    operator: 'FF9CC8', attribute: 'FFBC8A', string: 'F6E2A2', constant: 'FF8A7A',
+    comment: '8C72A8', escape: '9AA6FF',
   },
   glow: {
     keyword: [dark(2, '2A0A1A'), neon(4, 'FF2E93'), neon(10, 'FF2E93')],
     type: [dark(2, '0A0C24'), neon(4, '6F7BFF'), neon(10, '6F7BFF')],
     function: [dark(2, '1A0E00'), neon(3, 'FF7A1F'), neon(8, 'FF7A1F')],
     tag: [dark(2, '120A1C'), neon(8, 'A44CFF'), neon(24, '2A1A3A')],
-    variable: [dark(2, '15112A'), fixed(5, '33', 'FF4FA3'), fixed(10, '22', 'FFFFFF')],
+    variable: [dark(2, '231833'), fixed(5, '33', 'FF5FAA'), fixed(10, '22', 'FFFFFF')],
   },
 };
 
@@ -103,19 +108,21 @@ const SUNSET_LIGHT = {
   id: 'miami26-sunset-light',
   label: "Miami '26 Sunset Light",
   type: 'light',
+  // The sky at dusk, from top to bottom: a lavender frame, pink panels and a peach editor;
+  // plum palm trees on the status bar.
   ui: {
-    frame: 'E3C5DE', sidebar: 'F4DEE4', editor: 'FBECE4', raised: 'FCF3EE', border: 'D3AFD0',
-    text: '2E1A3D', muted: '74566F', faint: '9C7C96',
-    accent: 'C2186A', accentStrong: 'C2186A', onAccent: 'FFFFFF',
-    status: 'C2186A', statusText: 'FFFFFF',
-    selection: 'F2C3D6', inactiveSelection: 'EED9E3', highlight: 'DDD7F5', currentLine: 'EFD6D8',
-    warm: 'F2994A', secondary: '434BB5', error: 'C9392A', warning: '845A00', success: '2E7D4A',
-    gradient: ['C2186A', 'B5561A'],
+    frame: 'C9B9EA', sidebar: 'F8D8E1', editor: 'FDEBDB', raised: 'FEF4EC', border: 'AFA6E0',
+    text: '2E1A3D', muted: '6C5277', faint: '9A82A6',
+    accent: 'C8287A', accentStrong: 'C8287A', onAccent: 'FFFFFF',
+    status: '7E4B87', statusText: 'FFFFFF',
+    selection: 'F6C4D8', inactiveSelection: 'F2D9E2', highlight: 'DAD6F6', currentLine: 'F9DDD3',
+    warm: 'F6A56E', secondary: '4A56B8', error: 'C42B3A', warning: '7F5E00', success: '2E7D4A',
+    gradient: ['C8287A', 'A64F18'],
   },
   tokens: {
-    keyword: 'BD1766', type: '434BB5', function: 'B5561A', tag: '7235AD', variable: '35203F',
-    operator: 'A62A66', attribute: 'A94E17', string: '845A00', constant: 'C9392A',
-    comment: '87718F', escape: '434BB5',
+    keyword: 'BE1F70', type: '4A56B8', function: 'A64F18', tag: '7A3D8C', variable: '35203F',
+    operator: 'A3306E', attribute: 'A9521C', string: '7F5E00', constant: 'B83A28',
+    comment: '8E7299', escape: '4A56B8',
   },
 };
 
@@ -269,7 +276,7 @@ function workbench(t) {
     'statusBar.noFolderBackground': c(u.secondary),
     'statusBar.noFolderForeground': isDark ? c(u.frame) : c(u.onAccent),
     'statusBar.debuggingBackground': c(u.warm),
-    'statusBar.debuggingForeground': c(u.frame),
+    'statusBar.debuggingForeground': isDark ? c(u.frame) : c(u.text),
     'statusBarItem.remoteBackground': c(u.accentStrong),
     'statusBarItem.remoteForeground': c(u.onAccent),
     'statusBarItem.hoverBackground': '#ffffff22',
