@@ -35,7 +35,7 @@ Also available for Visual Studio: [Miami '26 for Visual Studio](https://github.c
 
 In VS Code, open the Extensions view, search for **Miami '26** and install it. Then pick a theme with *Preferences: Color Theme* (`Ctrl+K Ctrl+T`).
 
-To install a release instead, download `miami26-vscode-<version>.vsix` from the [latest release](https://github.com/stillgbx/miami26-vscode/releases/latest) and run *Extensions: Install from VSIX...*.
+To install a release instead, download `miami26-vscode.vsix` from the [latest release](https://github.com/stillgbx/miami26-vscode/releases/latest) and run *Extensions: Install from VSIX...*.
 
 ## Neon glow
 
